@@ -36,7 +36,7 @@ public class EmpController {
 	
 	@GetMapping(value="/employee/id/{id}")
 	public Employee getById(@PathVariable int id) {
-		Employee e = empService.getById(id);
+		Employee e = empService.getById(id);//
 		return e;
 	}
 	
